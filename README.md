@@ -1,6 +1,6 @@
 # EANx-Upcycler
 
-Enhanced feature version on Platform IO of this project https://github.com/lbehrler/EANx-Analyzer-Arduino
+This proeject is the enhanced feature version on Platform IO of this project https://github.com/lbehrler/EANx-Analyzer-Arduino
 
 # EANx-Analyzer-Arduino / ESP32 
 
