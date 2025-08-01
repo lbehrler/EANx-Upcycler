@@ -74,8 +74,13 @@ The current prototype unit is built using:
 + Custom PCB fit to project case
 + Project case
 
-*Prototype 4*
+*Prototype 4 (2023)*
 
 ![Custom PCB version](https://lh3.googleusercontent.com/pw/AIL4fc_xV2YWr-FOy9fTgCVv1qJvXfss7XXug2cmfTwabwHQb4MrrQRQn25uYb2qKOo2hIIW4s7WPj61GEHNv8foAk6tiZ7ztep2YEQh7d-Uges87c64GSATMVJgouoNBcy8N-WcfUyh_iExNov7f3sfYL7hUw=w525-h933-s-no?authuser=0)
 
+*Prototype 5 (2024)*
+
+![Updated 2024 Custom PCB version](https://photos.app.goo.gl/PdYUMDbEWCZ6u1Ew6)
+
+![Updated 2024 Custom PCB version compared to prior prototype](https://photos.app.goo.gl/oqAVks9MuHHbG4297)
 
