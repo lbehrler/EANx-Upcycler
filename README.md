@@ -80,7 +80,7 @@ The current prototype unit is built using:
 
 *Prototype 5 (2024)*
 
-![Updated 2024 Custom PCB version]([https://photos.app.goo.gl/PdYUMDbEWCZ6u1Ew6](https://photos.google.com/share/AF1QipNjEn-TrdnMF05mTOZ24ibBZqIj_ehv1Dks_XdrT-WGGPK6QBsrB0diFinIudk-CQ?key=cEdrRTQyMTNTeldYSlYzS0lZRWRhQWdMSUJzTnpn))
+![Updated 2024 Custom PCB version](https://photos.google.com/share/AF1QipNjEn-TrdnMF05mTOZ24ibBZqIj_ehv1Dks_XdrT-WGGPK6QBsrB0diFinIudk-CQ?key=cEdrRTQyMTNTeldYSlYzS0lZRWRhQWdMSUJzTnpn)
 
-![Updated 2024 Custom PCB version compared to prior prototype]([https://photos.app.goo.gl/oqAVks9MuHHbG4297](https://photos.google.com/share/AF1QipMIW4zaWZAqr8UFh9_IyrSKW3efZRfhGt28MfLeFvZtQPb09sWzopEhrviKaP7sUQ?key=Z1psTDVQRW9rS3NJREpTdXZTVzl2b0VjajAya1Vn))
+![Updated 2024 Custom PCB version compared to prior prototype](https://photos.google.com/share/AF1QipMIW4zaWZAqr8UFh9_IyrSKW3efZRfhGt28MfLeFvZtQPb09sWzopEhrviKaP7sUQ?key=Z1psTDVQRW9rS3NJREpTdXZTVzl2b0VjajAya1Vn)
 
