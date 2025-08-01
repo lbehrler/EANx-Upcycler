@@ -82,5 +82,5 @@ The current prototype unit is built using:
 
 ![Updated 2024 Custom PCB version](https://lh3.googleusercontent.com/pw/AP1GczNoXsIj_XvSAsj-ht8BGCuqAaKrWMoC3NvRyaNpUt6FAy5ujTYhkvhjrmUTBYbqieOqfvSEirto9aO3JR5rvVc2IP0qEDf0iFBZzX9sxhZbSd5727H_0m1uhsuyuJZzfSdw_rcTmTJtDSTHQGAi9pZnfA=w1210-h911-s-no-gm?authuser=0)
 
-![Updated 2024 Custom PCB version compared to prior prototype](https://photos.google.com/share/AF1QipMIW4zaWZAqr8UFh9_IyrSKW3efZRfhGt28MfLeFvZtQPb09sWzopEhrviKaP7sUQ?key=Z1psTDVQRW9rS3NJREpTdXZTVzl2b0VjajAya1Vn)
+![Updated 2024 Custom PCB version compared to prior prototype](https://lh3.googleusercontent.com/pw/AP1GczMBAn3n4O1VThizzvGGYfzOCwx3gXEC6evh_ko7mmDbOL345n-5UzLKVNtYUxFOvA2QpEPdAo1xt09oKZHD-n2jVT0Yx-JrvAx7QDHRk9BDhLu2GcQh0YuQ63DI_y-2qt9ipeyl1KWICh0h-DyJ5OvXKQ=w1210-h911-s-no-gm?authuser=0)
 
