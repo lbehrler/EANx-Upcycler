@@ -80,7 +80,7 @@ The current prototype unit is built using:
 
 *Prototype 5 (2024)*
 
-![Updated 2024 Custom PCB version](https://photos.google.com/share/AF1QipNjEn-TrdnMF05mTOZ24ibBZqIj_ehv1Dks_XdrT-WGGPK6QBsrB0diFinIudk-CQ?key=cEdrRTQyMTNTeldYSlYzS0lZRWRhQWdMSUJzTnpn)
+![Updated 2024 Custom PCB version](https://lh3.googleusercontent.com/pw/AP1GczNoXsIj_XvSAsj-ht8BGCuqAaKrWMoC3NvRyaNpUt6FAy5ujTYhkvhjrmUTBYbqieOqfvSEirto9aO3JR5rvVc2IP0qEDf0iFBZzX9sxhZbSd5727H_0m1uhsuyuJZzfSdw_rcTmTJtDSTHQGAi9pZnfA=w1210-h911-s-no-gm?authuser=0)
 
 ![Updated 2024 Custom PCB version compared to prior prototype](https://photos.google.com/share/AF1QipMIW4zaWZAqr8UFh9_IyrSKW3efZRfhGt28MfLeFvZtQPb09sWzopEhrviKaP7sUQ?key=Z1psTDVQRW9rS3NJREpTdXZTVzl2b0VjajAya1Vn)
 
