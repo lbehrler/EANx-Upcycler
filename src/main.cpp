@@ -14,13 +14,11 @@
 
 // Libraries
 #include <Arduino.h>
-// #include <Wire.h>
 #include <RunningAverage.h>
 #include <SPI.h>
 #include <Adafruit_GFX.h> // Core graphics library
 #include <TFT_eSPI.h>
 #include <Adafruit_ADS1X15.h>
-// #include <stdint.h>
 #include "pin_config.h"
 #include "version.h"
 
@@ -71,6 +69,7 @@ float spFactor = 0;
 float prevaveSensorValue = 0;
 float aveSensorValue = 0;
 float mVolts = 0;
+int ADSchk = 0;
 float batVolts = 0;
 float prevO2 = 0;
 float currentO2 = 0;
@@ -160,14 +159,14 @@ float batStat();
 void SenseFault()
 {
   debugln("Low mV reading from Sensor");
-  tft.fillScreen(TFT_YELLOW);
-  tft.setTextColor(TFT_RED);
+  tft.fillScreen(TFT_RED);
+  tft.setTextColor(TFT_WHITE);
   tft.setTextSize(1 * ResFact);
   tft.drawCentreString("Error", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.1, 4);
-  tft.drawCentreString("Sensor mV", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.4, 4);
-  tft.drawCentreString("LOW", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.7, 4);
+  tft.drawCentreString("Replace", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.4, 4);
+  tft.drawCentreString("O2 Sensor", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.7, 4);
   tft.setTextSize(1);
-  tft.drawCentreString(String(mVolts), TFT_WIDTH * .5, TFT_HEIGHT * 0.8, 4);
+  tft.drawCentreString(String(mVolts), TFT_WIDTH * .5, TFT_HEIGHT * 0.9, 4);
   delay(30000);
 }
 
@@ -178,10 +177,10 @@ void BattFault()
   tft.setTextColor(TFT_RED);
   tft.setTextSize(1 * ResFact);
   tft.drawCentreString("Error", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.1, 4);
-  tft.drawCentreString("Battery", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.4, 4);
-  tft.drawCentreString("Low", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.7, 4);
+  tft.drawCentreString("Recharge", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.4, 4);
+  tft.drawCentreString("Battery", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.7, 4);
   tft.setTextSize(1);
-  tft.drawCentreString(String(batVolts), TFT_WIDTH * .5, TFT_HEIGHT * 0.8, 4);
+  tft.drawCentreString(String(batVolts), TFT_WIDTH * .5, TFT_HEIGHT * 0.9, 4);
   delay(30000);
 }
 
@@ -212,10 +211,11 @@ float initADC()
     tft.setTextSize(1 * ResFact);
     tft.drawCentreString("Error", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.1, 4);
     tft.drawCentreString("ADC", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.4, 4);
-    tft.drawCentreString("Fail", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.7, 4);
+    tft.drawCentreString("Failure", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.7, 4);
     delay(30000);
     while (1);
   }
+  ADSchk = 1;
   return (multiplier);
 }
 
@@ -830,25 +830,50 @@ void setup()
   testdrawcircles(5, TFT_WHITE);
   delay(500);
 
+
+  // setup display and calibrate unit
+  initADC();
+  debugln("Post ADS check statement");
+
+  // Unit Information Screen
   tft.fillScreen(TFT_DARKCYAN);
   // tft.setTextSize(1 * ResFact);
   tft.setTextSize(1);
   tft.setTextColor(TFT_WHITE);
-  tft.drawCentreString("Display", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.15, 4);
-  tft.drawCentreString("Initialized", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.3, 4);
+  if (ADSchk == 1) 
+  { 
+    tft.setTextColor(TFT_GREEN);
+    tft.drawCentreString("ADC Good", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.15, 4);
+  }
+  else 
+  {
+    tft.setTextColor(TFT_RED);
+    tft.drawCentreString("ADC Issue", TFT_WIDTH * 0.5, TFT_HEIGHT * 0.15, 4);
+  }
+  // String mVtest = String(mVolts);  
+  float mVtestval = ((abs(ads.readADC_Differential_0_1())) * .0625);
+  String mVtest = String (mVtestval);
+ if (mVtestval <= 8.0 )
+ {
+  tft.setTextColor(TFT_RED);
+  tft.drawCentreString(String("Sensor mV " + mVtest), TFT_WIDTH * 0.5, TFT_HEIGHT * 0.3, 4);
+ }
+ else
+ {
+  tft.setTextColor(TFT_GREEN);
+  tft.drawCentreString(String("Sensor mV " + mVtest), TFT_WIDTH * 0.5, TFT_HEIGHT * 0.3, 4);
+ } 
   tft.setTextSize(1);
+  tft.setTextColor(TFT_WHITE);
   tft.drawCentreString(MODEL, TFT_WIDTH * 0.5, TFT_HEIGHT * 0.45, 4);
   tft.drawCentreString(VERSION, TFT_WIDTH * 0.5, TFT_HEIGHT * 0.6, 4);
 #if ESP32
   tft.drawCentreString(String (chipId), TFT_WIDTH * 0.5, TFT_HEIGHT * 0.75, 4);
 #endif
 
-  delay(3000);
-  tft.fillScreen(TFT_BLACK);
+  delay(5000);
 
-  // setup display and calibrate unit
-  initADC();
-  debugln("Post ADS check statement");
+  tft.fillScreen(TFT_BLACK);
 
   o2calibration();
   debugln("Post O2 calibration");

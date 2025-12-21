@@ -14,7 +14,7 @@
 
 // Software Definitions
 #define MODEL "EANx O2 Upcycler"
-#define VERSION "0.5.2 Beta"
+#define VERSION "0.5.3 Beta"
 #define FILE "EANx_Upcycler on Platform IO"
 
 /*
