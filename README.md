@@ -1,6 +1,6 @@
 # EANx-Upcycler
 
-Enhanced feature version on Platform IO of this project https://github.com/lbehrler/EANx-Analyzer-Arduino
+This proeject is the enhanced feature version on Platform IO of this project https://github.com/lbehrler/EANx-Analyzer-Arduino
 
 # EANx-Analyzer-Arduino / ESP32 
 
@@ -74,8 +74,13 @@ The current prototype unit is built using:
 + Custom PCB fit to project case
 + Project case
 
-*Prototype 4*
+*Prototype 4 (2023)*
 
 ![Custom PCB version](https://lh3.googleusercontent.com/pw/AIL4fc_xV2YWr-FOy9fTgCVv1qJvXfss7XXug2cmfTwabwHQb4MrrQRQn25uYb2qKOo2hIIW4s7WPj61GEHNv8foAk6tiZ7ztep2YEQh7d-Uges87c64GSATMVJgouoNBcy8N-WcfUyh_iExNov7f3sfYL7hUw=w525-h933-s-no?authuser=0)
 
+*Prototype 5 (2024)*
+
+![Updated 2024 Custom PCB version](https://lh3.googleusercontent.com/pw/AP1GczNoXsIj_XvSAsj-ht8BGCuqAaKrWMoC3NvRyaNpUt6FAy5ujTYhkvhjrmUTBYbqieOqfvSEirto9aO3JR5rvVc2IP0qEDf0iFBZzX9sxhZbSd5727H_0m1uhsuyuJZzfSdw_rcTmTJtDSTHQGAi9pZnfA=w1210-h911-s-no-gm?authuser=0)
+
+![Updated 2024 Custom PCB version compared to prior prototype](https://lh3.googleusercontent.com/pw/AP1GczMBAn3n4O1VThizzvGGYfzOCwx3gXEC6evh_ko7mmDbOL345n-5UzLKVNtYUxFOvA2QpEPdAo1xt09oKZHD-n2jVT0Yx-JrvAx7QDHRk9BDhLu2GcQh0YuQ63DI_y-2qt9ipeyl1KWICh0h-DyJ5OvXKQ=w1210-h911-s-no-gm?authuser=0)
 
